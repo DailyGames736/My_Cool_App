@@ -1,0 +1,128 @@
+# cool new app
+
+# here is my GitHub!: https://github.com/DailyGames736 get in And find more cool thing's!!!
+
+input("Let's make you'r dog's a profile!")
+
+user_dog_name = input("What's you'r dog's name?: ")
+user_dog_age = input("What's you'r dog's age?: ")
+user_dog_size = input("What's you'r dog's size?: ")
+user_name = input("and finally what's YOU'R name?: ")
+
+print(f"You'r dog's age is {user_dog_age} ")
+print(f"You'r dog's name is {user_dog_name} ")
+print(f"You'r dog's size is {user_dog_size} ")
+print(f"You'r name is {user_name}")
+
+user_Q = input
+possible_Q = ["My dog is lazy what am i need to do?", "My dog is never full What to do?", "My dog is eat my shoes what to do?"]
+
+if user_Q == "My dog is never full What to do?":
+    print('')
+    print("First, I suggest you start feeding it fewer times during the day. Regarding his pleas for food - at the moment he is the one who teaches you and he seems to do so very successfully through negative reinforcement. Until you get up to feed him he will not stop harassing.")
+    print("I advise you, despite the difficulty of the matter, not to lose patience, not to stand up and respond to his pleas. Only after he has stopped whimpering and raised his hands for a minute, get up, even if it is early, and put food in a bowl.")
+    print("In this way you will strengthen the silence instead of whining and after a few days extend the period of time you will approach to give him the food after it has stopped whining for about 10-15 minutes. After two weeks you can earn two hours. Successfully")
+
+if user_Q == "My dog is lazy what am i need to do?":
+    print('')
+    print("Dogs always enjoy a good snooze, ")
+    print("just like us but how do you stop him from being so lazy? One of the first things you should do is to visit the veterinarian to find out the cause of his excessive")
+    print("snoozing and his increasingly lazy behavior. If he seems to be more lethargic than lazy, it is possible that he is suffering from a health issue.")
+
+if user_Q == "My dog is eat my shoes what to do?":
+    print('')
+    print("You need to put your shoes away. Your dog may try to apply her chewing to other things that smell like you. Make sure you keep your clothes put away too.")
+    print("control the cravings, give her an alternative like a nylabone or a kong.")
+
+if user_Q == "My dog is sick What to do?":
+    print('')
+    print("Do not let your dog drink too much at once. Drinking lots of water tends to result in further vomiting with the risk of dehydration. ")
+    print("Give cooled, boiled water little and often.")
+
+# import's
+
+# TKinter
+
+from tkinter import *
+
+top = Tk()
+
+top.geometry("980x500")
+
+# make the 6 Function
+
+def shoes():
+    print("You need to put your shoes away. Your dog may try to apply her chewing to other things that smell like you. Make sure you keep your clothes put away too.")
+    print("control the cravings, give her an alternative like a nylabone or a kong.")
+    print('')
+
+def sick():
+    print("Do not let your dog drink too much at once. Drinking lots of water tends to result in further vomiting with the risk of dehydration. ")
+    print("Give cooled, boiled water little and often.")
+    print('')
+
+def lazy():
+    print("Dogs always enjoy a good snooze, ")
+    print("just like us but how do you stop him from being so lazy? One of the first things you should do is to visit the veterinarian to find out the cause of his excessive")
+    print("snoozing and his increasingly lazy behavior. If he seems to be more lethargic than lazy, it is possible that he is suffering from a health issue.")
+    print('')
+
+def full():
+    print("First, I suggest you start feeding it fewer times during the day. Regarding his pleas for food - at the moment he is the one who teaches you and he seems to do so very successfully through negative reinforcement.")
+    print(" Until you get up to feed him he will not stop harassing.")
+    print("I advise you, despite the difficulty of the matter, not to lose patience, not to stand up and respond to his pleas. Only after he has stopped whimpering and raised his hands for a minute,")
+    print(" get up, even if it is early, and put food in a bowl.")
+    print("In this way you will strengthen the silence instead of whining and after a few days extend the period of time you will approach to give him the food after it has stopped whining for about 10-15 minutes.")
+    print(" After two weeks you can earn two hours. Successfully")
+    print('')
+
+def angry():
+    print("If your dog actually is mad, then stop doing whatever is making him mad. If your dog just generally seems upset or in an off mood, then start by meeting his basic needs.")
+    print(" Make sure your dog has mental stimulation, physical exercise, and, of course, lots of love. Dogs are better than us.")
+    print('')
+
+def bite():
+    print("No matter how strong your bond with your dog, at some point, you may be unexpectedly bitten. This can be overwhelming and extremely upsetting. If your dog bites you, the most important thing to do is to remain calm. Keep in mind,")
+    print(" a dog bite doesn’t mean your dog has become aggressive, and it doesn’t mean that biting will forever be a problem. There are many reasons a dog may bite, and bites can vary in seriousness and intensity. (Note: for a severe bite, seek medical attention first and foremost!)")
+    print("Let’s take a look at the various reasons a dog bites, along with strategies for dealing with the behavior. When in doubt, consult a reputable trainer.")
+    print('')
+
+# make the 8 button's
+
+b1 = Button(top,text = f"{user_dog_name} is eat my shoes what to do?",command = shoes,activeforeground = "blue",activebackground = "red",pady=10)
+
+b2 = Button(top, text = f"{user_dog_name} is sick What to do?",command = sick,activeforeground = "blue",activebackground = "red",pady=10)
+
+b3 = Button(top, text = f"{user_dog_name} is lazy what am i need to do?",command = lazy,activeforeground = "blue",activebackground = "red",pady = 10)
+
+b4 = Button(top, text = f"{user_dog_name} is never full What to do?",command = full,activeforeground = "blue",activebackground = "red",pady = 10)
+
+b5 = Button(top, text = f"{user_dog_name} is angry What to do?",command = angry,activeforeground = "blue",activebackground = "red",pady = 10)
+
+b6 = Button(top, text = f"{user_dog_name} is bite me What to do?",command = bite,activeforeground = "blue",activebackground = "red",pady = 10)
+
+# End off button's!
+
+# b8 = Button(top, text = f"{user_dog_name} is alway's under my table What to do?",command = full,activeforeground = "blue",activebackground = "red",pady = 10)
+
+
+# make the 8 side's
+
+b1.pack(side = LEFT)
+
+b2.pack(side = RIGHT)
+
+b3.pack(side = TOP)
+
+b4.pack(side = BOTTOM)
+
+b5.pack(side = RIGHT)
+
+b6.pack(side = RIGHT)
+
+# b8.pack(side = RIGHT)
+# I gonna do somthing later...
+
+top.mainloop()
+
+# the END!
